@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: headless-mysql-svc
+  namespace: k8s-app
+  labels:
+    app: k8s-mysql
+spec:
+  clusterIP: None
+  selector:
+    app: k8s-mysql
+  ports:
+    - name: tcp
+      protocol: TCP
+      port: 3306

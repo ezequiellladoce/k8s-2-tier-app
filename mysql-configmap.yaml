@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-configmap
+  namespace: k8s-app
+data:
+  MYSQL_DATABASE: todos

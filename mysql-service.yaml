@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-svc
+  namespace: k8s-app
+  labels:
+    app: k8s-mysql
+spec:
+  type: LoadBalancer
+  selector:
+    statefulset.kubernetes.io/pod-name: mysql-0 
+    externalTrafficPolicy: Local
+  ports:
+    - name: tcp
+      port: 80
+      targetPort: 80
