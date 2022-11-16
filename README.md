@@ -474,7 +474,7 @@ You can check the PhpMyAdmin in your browser with the url localhost:3000
 
 Login with root /password add check the databases
 
-
+https://github.com/ezequiellladoce/k8s-2-tier-app/issues/2#issue-1451902123
 
 
 
