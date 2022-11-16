@@ -4,6 +4,7 @@ metadata:
   name: myadmin-svc
   namespace: k8s-app
 spec:
+  type: LoadBalancer
   selector:
     app: phpmyadmin
   ports:

@@ -17,7 +17,7 @@ spec:
       terminationGracePeriodSeconds: 10
       containers:
         - name: k8s-mysql
-          image: mysql:5.6
+          image: mysql:5.7
           ports:
             - name: tpc
               protocol: TCP
