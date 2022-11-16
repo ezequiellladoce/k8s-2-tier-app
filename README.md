@@ -1,6 +1,6 @@
-# k8s 2 tier App with a fronted Deployment and a MySQL StatefulSet as backend
+# k8s 2 tier App with a front-end Deployment and a MySQL StatefulSet as back-end
 
-In this replo we will deploy a 2 tier app. As a front-end we will use phpmyadmin with a k8s Deployment  with 3 Repliacas , the PhpMyAdmin will connect to a MySQL StatefulSet as back-end with 3 replicas.
+In this replo we will deploy a 2 tier app. As a front-end we will use PhpMyAdmin with a k8s Deployment  with 3 Repliacas , the PhpMyAdmin will connect to a MySQL StatefulSet as back-end with 3 replicas.
 
 The Mysql Stateful will record data persistently in a persistent volume and can replicate data to the other pods in the same StatefullSet.
 
@@ -14,7 +14,7 @@ Secrets are used to supply sensitive information to containers.
 - Add a Headless service to provide a stable domain controller of the pods.
 - Use  secrets to mount the passwords in the mysql pods.
 - Add a database to Mysql throw configmaps 
-- Deploy a Phpmyadmin as a front end with 3 replicas.
+- Deploy a PhpMyAdmin as a front end with 3 replicas.
 - Add a Load balancer to the deployment
 - Connect the front end Deployment with the back-end StatefulSet.  
 - Test the app.
