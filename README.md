@@ -470,6 +470,7 @@ Handling connection for 3000
 
 You can check the PhpMyAdmin in your browser with the url localhost:3000
 
+![front](https://user-images.githubusercontent.com/67485607/202235907-c65e8ae7-48ed-4242-a817-bb153ae2bf2a.PNG)
 
 Login with root /password add check the databases
 
